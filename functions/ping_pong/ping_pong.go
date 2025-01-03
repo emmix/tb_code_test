@@ -9,6 +9,7 @@ func ping(e event.Event) uint32 {
 	h, err := e.HTTP()
 	if err != nil {
 		return 1
+		
 	}
 
 	h.Write([]byte("PONG"))
